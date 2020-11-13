@@ -1,0 +1,151 @@
+.product-description {
+  display: flex;
+  max-width: 1000px;
+  padding: 50px 0;
+}
+
+.desc-image {
+  max-width: 500px;
+  padding: 50px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc-content {
+  padding: 20px 50px;
+}
+
+.desc-content .addtocartbtn {
+  border: 1px solid #ccc;
+  padding: 7px 26px;
+  border-radius: 4px;
+}
+
+.desc-content h4 {
+  margin: 0 0 20px 0;
+}
+
+.desc-content p {
+  margin: 0 0 20px 0;
+}
+
+.desc-content h2 {
+  margin: 0 0 20px 0;
+}
+
+.desc-content h6 {
+  margin: 0 0 20px 0;
+}
+
+.desc-content h5 {
+  margin: 0 0 20px 0;
+}
+
+.desc-content ul {
+  padding: 0px 17px;
+  margin: 0 0 20px 0;
+}
+
+.description-nav ul {
+  padding-left: 0;
+  display: flex;
+}
+
+.description-nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.description-nav ul li button {
+  border: none;
+}
+
+.description-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.modal-data {
+  display: flex;
+}
+
+.custom-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.custom-modal .modal-bg {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+}
+
+.custom-modal .modal-close {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.custom-modal .modal-left,
+.custom-modal .modal-right {
+  width: 100%;
+  max-width: 275px;
+}
+
+.custom-modal .modal-right {
+  padding: 0 30px;
+  margin-top: 23px;
+}
+.modal-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.footer-btn .footer-btn-link {
+  width: 50%;
+  padding: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  color: #000;
+  background-color: rgb(239, 239, 239);
+}
+.footer-btn .footer-btn-link:hover {
+  text-decoration: none;
+}
+.footer-btn .footer-btn-link:first-child {
+  margin-right: 5px;
+}
+.footer-btn .footer-btn-link:last-child {
+  margin-left: 5px;
+}
+
+.footer-btn {
+  margin-top: 20px;
+  display: flex;
+}

@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+@import "./css/bootstrap.css";
+@import "./css/header.css";
+@import "./css/home.css";
+@import "./css/product.css";
+@import "./css/footer.css";
+
+.container-style {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.c-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.app-view {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 30px 25px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
+.ring-1 {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+  animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@keyframes loadingD {
+  0 {
     transform: rotate(0deg);
   }
-  to {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
+}
+
+/* ############################################ */
+
+.checkout-table img {
+  max-width: 100px;
+  width: 100%;
+  max-height: 85px;
+  margin-right: 30px;
+}
+
+.checkout-table td,
+.checkout-table th {
+  vertical-align: middle;
+  text-align: center;
+}
+.checkout-table td:first-child {
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+.checkout-table td button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: #ccc;
+}
+
+.table-footered a {
+  width: 25%;
+  padding: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  color: #000;
+  background-color: rgb(239, 239, 239);
+}
+
+.table-footered a:hover {
+  text-decoration: none;
+}
+
+.table-footered {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-section {
+  border: 1px solid #ccc;
+  background-color: rgb(239, 239, 239);
+  padding: 5px 20px;
+}
+
+.summary-section h4 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.summary-section p {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-table td button:focus {
+  outline: none;
+}
+
+
+/* ################## grid #################### */
+
+.outer-product-img {
+  min-height: 259px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* border: 1px solid #ccc; */
+  background-color: #fff;
+  /* box-shadow: 4px 4px 4px #ccc; */
+}
+
+.outer-product-img img {
+  width: 100%;
+  max-width: 130px;
+}
+
+.comman-product-card {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+    box-shadow: 4px 4px 4px #ccc;
+    min-height: 400px;
+    border-radius: 5px;
+}
+
+.outer-product-desc {
+  display: grid;
+  grid-template-rows: 80px;
+}
+
+/* ################## grid #################### */
+/* ################## list #################### */
+
+.list-product-card {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+    min-height: 320px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.list-product-image {
+  /* width: 25%; */
+  min-height: 259px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.list-product-desc {
+  /* width: 75%; */
+  margin-left: 30px;
+}
+
+.list-product-image img {
+  width: 100%;
+  max-width: 210px;
+}
+
+
+
+
+
+/* ################## list #################### */
+
+
+
+
+
+.toolbar-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar-top ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.toolbar-top ul li {
+list-style: none;
+padding: 0 10px;
+}
+
+
+/* ####################### */
+
+.all-products  {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.all-products  img{
+  max-height: 200px;
+  height: 100%;
 }

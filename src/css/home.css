@@ -1,0 +1,121 @@
+.box-service {
+        border: 1px solid #e6e6e6;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        background: #fff;
+}
+
+.box-service ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+
+.box-service ul li {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-service ul li::after {
+    content: "";
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    margin: auto 0;
+}
+
+.box-service ul li:last-child::after {
+    display: none;
+}
+
+.box-service .box-service-img {
+    max-width: 50px;
+    padding-right: 10px;
+}
+
+.box-service .box-service-img img {
+    width: 100%;
+}
+
+.box-service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-service-content h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.box-service-content p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.products-section .product-card {
+    background-color: #fff;
+    padding: 30px 10px;
+}
+
+.products-section .product-card .product-card-item .product-card-img {
+    max-width: 225px;
+}
+
+.products-section .product-card {
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    justify-content: space-around;
+}
+
+.top-deals {
+    display: flex;
+    padding: 50px 0; 
+}
+
+.top-deals .deals-card {
+    flex: 1;
+    padding: 20px;
+}
+
+.inner-card-item {
+    padding: 0 15px;
+}
+
+.product-card-item {
+    max-width: 250px;
+    box-shadow: 4px 4px 4px #ccc;
+}
+
+.product-card-description h4 {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.products-section .product-card .product-card-item .product-card-img {
+    min-height: 259px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.products-section .product-card .product-card-item .product-card-img img {
+    width: 100%;
+    max-width: 130px;
+}
