@@ -7,6 +7,7 @@ import { Route } from "react-router-dom";
 import Product from "./components/pages/singleProductPage/Product";
 import Checkout from "./components/pages/checkout/Checkout";
 import Computer from "./components/pages/computer/computer";
+// import { UserProvider } from "./userContext";
 
 function App() {
   return (
@@ -15,7 +16,14 @@ function App() {
       <div className="c-body">
         <div className="app-view">
           <div className="container-style">
+
+
+{/* <UserProvider value="shivam"> */}
+
+
           <Route exact path="/" component={Home} />
+
+          {/* </UserProvider> */}
 
           <Route exact path="/product/:id" component={Product} />
           <Route exact path="/checkout/:id" component={Checkout} />
