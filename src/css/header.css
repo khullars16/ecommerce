@@ -1,69 +1,78 @@
 .site-header .top-search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    max-width: 1408px;
-  }
-  
-  .top-search .nav-search {
-    width: 90%;
-    max-width: 1000px;
-    padding: 0;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
-  }
-  
-  .site-header .nav-cart-menu ul {
-    display: flex;
-    align-items: center;
-  }
-  
-  .site-header .nav-cart-menu ul li {
-   list-style: none;
-   padding: 0 15px;
-  }
-  
-  .bottom-header ul {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 20px 0;
-  }
-  
-  .header-top {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-  
-  .bottom-header .container-style {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .site-header ul li {
-    color: #fff;
-    list-style: none;
-   padding: 0 15px;
-  }
-  
-  .nav-search .input-group .form-control {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  
-  .nav-search .dd-btn {
-    background-color: #fff;
-  }
-  
-  .nav-search .dd-btn:hover {
-    color: #6c757d;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  max-width: 1408px;
+}
 
-  .nav-logo {
-    max-width: 150px;
-  }
+.top-search .nav-search {
+  width: 90%;
+  max-width: 1000px;
+  padding: 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.site-header .nav-cart-menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .nav-cart-menu ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.bottom-header ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+.bottom-header ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.bottom-header ul li a:hover {
+  text-decoration: none;
+}
+
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.bottom-header .container-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header ul li {
+  color: #fff;
+  list-style: none;
+  padding: 0 15px;
+}
+
+.nav-search .input-group .form-control {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-search .dd-btn {
+  background-color: #fff;
+}
+
+.nav-search .dd-btn:hover {
+  color: #6c757d;
+}
+
+.nav-logo {
+  max-width: 150px;
+}

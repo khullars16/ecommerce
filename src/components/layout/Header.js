@@ -71,10 +71,11 @@ const Header = () => {
           <div className="container-style">
           
             <ul>
-              <li>TABBLETS &amp; IPAD</li>
-              <li><Link to="/computer">COMPUTER</Link></li>
-              <li><Link to="/computer">SPORT</Link></li>
-              <li>FIND A STORE</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/electronics">Electronics</Link></li>
+              <li><Link to="/jewelery">Jewelery</Link></li>
+              <li><Link to="/men-clothing">Men</Link></li>
+              <li><Link to="/women-clothing">Women</Link></li>
             </ul>
             <ul>
               <li>USD</li>

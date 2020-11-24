@@ -6,7 +6,10 @@ import Home from "./components/pages/home/Home";
 import { Route } from "react-router-dom";
 import Product from "./components/pages/singleProductPage/Product";
 import Checkout from "./components/pages/checkout/Checkout";
-import Computer from "./components/pages/computer/computer";
+import Electronics from "./components/pages/electronics/electronics";
+import Jewelery from "./components/pages/jewelery/jewelery";
+import Men from "./components/pages/men/men";
+import Women from "./components/pages/women/women";
 // import { UserProvider } from "./userContext";
 
 function App() {
@@ -18,16 +21,18 @@ function App() {
           <div className="container-style">
 
 
-{/* <UserProvider value="shivam"> */}
 
 
           <Route exact path="/" component={Home} />
 
-          {/* </UserProvider> */}
+
 
           <Route exact path="/product/:id" component={Product} />
           <Route exact path="/checkout/:id" component={Checkout} />
-          <Route exact path="/computer" component={Computer} />
+          <Route exact path="/electronics" component={Electronics} />
+          <Route exact path="/jewelery" component={Jewelery} />
+          <Route exact path="/men-clothing" component={Men} />
+          <Route exact path="/women-clothing" component={Women} />
         </div>
         </div>
         <Footer />

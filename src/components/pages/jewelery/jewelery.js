@@ -5,7 +5,7 @@ import SidePannel from "./SidePannel";
 import ProductPannel from "./ProductPannel";
 import ToolBar from "./ToolBar";
 
-class Computer extends Component {
+class Jewelery extends Component {
   state = {
     details: [],
     loading: false,
@@ -15,12 +15,14 @@ class Computer extends Component {
     rowno: 4
   };
 
+  category = "jewelery";
+
   async componentDidMount() {
-    this.computerArr = [];
-    const res = await axios.get(`https://fakestoreapi.com/products`);
+    this.electronicsArr = [];
+    const res = await axios.get(`https://fakestoreapi.com/products/category/${this.category}`);
 
     res.data.map((item) => {
-      return this.computerArr.push({
+      return this.electronicsArr.push({
         id: item.id,
         title: item.title,
         price: item.price,
@@ -31,11 +33,11 @@ class Computer extends Component {
     });
 
     this.setState({
-      details: this.computerArr,
+      details: this.electronicsArr,
       loading: true,
     });
     console.log(this.state.details);
-  }
+  };
 
   rowShow = (e) => {
     this.setState({ rowType: e });
@@ -72,4 +74,4 @@ class Computer extends Component {
   }
 }
 
-export default Computer;
+export default Jewelery;
